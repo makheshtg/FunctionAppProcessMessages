@@ -1,0 +1,24 @@
+﻿{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "res",
+      "type": "http",
+      "direction": "out",
+      "methods": ["post"]
+    },
+    {
+      "type": "queue",
+      "name": "outputQueue",
+      "queueName": "newmessages",
+      "connection": "processmessagevs_STORAGE",
+      "direction": "out"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+﻿{
+  "disabled": false,
+  "bindings": [
+    {
+      "type": "manualTrigger",
+      "direction": "in",
+      "name": "input"
+    },
+    {
+      "type": "queue",
+      "name": "outputQueue",
+      "queueName": "newmessages",
+      "connection": "processmessagevs_STORAGE",
+      "direction": "out"
+    }
+  ]
+}

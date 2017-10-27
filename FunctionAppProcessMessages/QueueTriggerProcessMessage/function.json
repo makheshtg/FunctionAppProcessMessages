@@ -1,0 +1,19 @@
+﻿{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "messageRequest",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "newmessages",
+      "connection": "AzureWebJobsprocessmessagevs_STORAGE"
+    },
+    {
+      "name": "greetingRequest",
+      "type": "blob",
+      "direction": "out",
+      "connection": "AzureWebJobsprocessmessagevs_STORAGE",
+      "path": "processedmessages/{rand-guid}"
+    }
+  ]
+}
